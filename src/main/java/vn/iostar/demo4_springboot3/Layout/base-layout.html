@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Category Management</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" /> <!-- Kết nối file CSS nếu có -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="/images/my-profile-picture.jpg" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%;" />
+        </div>
+        <nav>
+            <ul>
+                <li><a th:href="@{/categories}">Home</a></li>
+                <li><a th:href="@{/categories/new}">Add Category</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content (Nội dung chính của trang) -->
+    <main>
+        <div layout:fragment="content">
+            <!-- Nội dung sẽ được thay thế từ các file con -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by [Your Name] - MSSV: [Your Student ID]</p>
+    </footer>
+</body>
+</html>
